@@ -48,11 +48,11 @@
 							</div>
 						</div>
 					</div>
-					<c:if test="${(status.index+1) % 4 == 0 }">
-				</div>
-				<div class="row">
-					</c:if>
 					</c:forEach>
+					<c:if test="${(status.index+1) % 4 == 0 }">
+						<div class="row">
+						</div>
+					</c:if>
 
 				</div>
 			</form>

@@ -65,6 +65,7 @@ public class EcHelper {
 		for (ItemDataBeans item : items) {
 			total += item.getPrice();
 		}
+
 		return total;
 	}
 
