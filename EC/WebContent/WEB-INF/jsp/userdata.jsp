@@ -62,20 +62,15 @@
 								</tr>
 							</thead>
 							<tbody>
+								<c:forEach var="resultUDB" items="${resultUDB}" >
+									<tr>
+										<td class="center"><a href="UserBuyHistoryDetail?buy_id?" class="btn-floating btn waves-effect waves-light "> <i class="material-icons">details</i></a></td>
 
+										<td class="center">${resultUDB.formatDate}</td>
+										<td class="center">${resultUDB.deliveryMethodName}</td>
+										<td class="center">${resultUDB.totalPrice}円</td>
 								<tr>
-									<td class="center"><a href="UserBuyHistoryDetail?buy_id=1" class="btn-floating btn waves-effect waves-light "> <i class="material-icons">details</i></a></td>
-									<td class="center">1234年56月78日90時12分</td>
-									<td class="center">サンプル配送料金</td>
-									<td class="center"><123456789円円</td>
-								</tr>
-								<tr>
-									<td class="center"><a href="UserBuyHistoryDetail?buy_id=2" class="btn-floating btn waves-effect waves-light "> <i class="material-icons">details</i></a></td>
-									<td class="center">1234年56月78日90時12分</td>
-									<td class="center">サンプル配送料金</td>
-									<td class="center"><123456789円円</td>
-								</tr>
-
+								</c:forEach>
 							</tbody>
 						</table>
 					</div>
