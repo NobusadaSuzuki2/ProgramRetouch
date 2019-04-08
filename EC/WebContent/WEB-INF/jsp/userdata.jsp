@@ -64,7 +64,7 @@
 							<tbody>
 								<c:forEach var="resultUDB" items="${resultUDB}" >
 									<tr>
-										<td class="center"><a href="UserBuyHistoryDetail?buy_id?" class="btn-floating btn waves-effect waves-light "> <i class="material-icons">details</i></a></td>
+										<td class="center"><a href="UserBuyHistoryDetail?buy_id=${resultUDB.id}" class="btn-floating btn waves-effect waves-light "> <i class="material-icons">details</i></a></td>
 
 										<td class="center">${resultUDB.formatDate}</td>
 										<td class="center">${resultUDB.deliveryMethodName}</td>

@@ -101,7 +101,7 @@ public class BuyDAO {
 			}
 		}
 	}
-	//ユーザーIDによる購入情報検索
+	//ユーザーIDによる購入情報List検索
 	public static ArrayList<BuyDataBeans> getBuyDataBeansUserIdBuyId(int userId) throws SQLException {
 		Connection con = null;
 		PreparedStatement st = null;

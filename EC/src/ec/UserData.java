@@ -44,8 +44,7 @@ public class UserData extends HttpServlet {
 			request.setAttribute("udb", udb);
 
 
-			/* ====購入履歴ページ表示用==== BuyDAO.getBuyDataBeansUserIdBuyIdを配列にして取得（未実装）
-			 * BuyDetailDAOのgetItemDataBeansListByBuyIdを参考にする*/
+			/* ====購入履歴ページ表示用==== */
 			ArrayList<BuyDataBeans> resultUDB = BuyDAO.getBuyDataBeansUserIdBuyId(userId);
 			request.setAttribute("resultUDB", resultUDB);
 
